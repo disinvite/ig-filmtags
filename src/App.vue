@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="justify-content-center">
+      <b-row>
+        <b-col offset-lg="3" lg="6" offset-md="2" md="8" xs="12">
+          <TagForm/>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TagForm from './components/TagForm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TagForm
   }
 }
 </script>
@@ -23,6 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-bottom: 60px;
   margin-top: 60px;
 }
 </style>
